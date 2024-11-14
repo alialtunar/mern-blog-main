@@ -13,7 +13,7 @@ export default function Comment({ comment, onLike, onEdit, onDelete }) {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/user/${comment.userId}`,{credentials:'include'});
+        const res = await fetch(`/api/user/${comment.userId}`,{credentials:'include'});
         const data = await res.json();
         if (res.ok) {
           setUser(data);

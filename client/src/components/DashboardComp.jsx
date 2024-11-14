@@ -36,7 +36,7 @@ export default function DashboardComp() {
     };
     const fetchPosts = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/post/getposts?limit=5',{credentials: 'include'});
+        const res = await fetch('/api/post/getposts?limit=5',{credentials: 'include'});
         const data = await res.json();
         if (res.ok) {
           setPosts(data.posts);
@@ -49,7 +49,7 @@ export default function DashboardComp() {
     };
     const fetchComments = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/comment/getcomments?limit=5',{credentials: 'include'});
+        const res = await fetch('/api/comment/getcomments?limit=5',{credentials: 'include'});
         const data = await res.json();
         if (res.ok) {
           setComments(data.comments);

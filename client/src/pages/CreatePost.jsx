@@ -72,7 +72,7 @@ export default function CreatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:3000/api/post/create', {
+      const res = await fetch('/api/post/create', {
         method: 'POST',
         credentials: 'include',
         headers: {

@@ -1,17 +1,17 @@
 // jobs/claude-job.js
 import cron from "node-cron";
 import fs from "fs";
-import jobConfig from "../config/job-config.js";
+import TopicConfig from "../config/claude-Topicconfig.js";
 import claudeService from "../services/claude-service.js";
 import Topic from "../models/topic.model.js";
 
 class ClaudeJob {
   constructor() {
-    this.config = jobConfig.claudeJob;
+    this.config = TopicConfig.claudeJob;
   }
 
   start() {
-    if (!this.config.enabled) return;
+    if (!this.config?.enabled) return;
 
     cron.schedule(this.config.schedule, async () => {
       console.log("Claude Job çalışıyor:", new Date().toISOString());

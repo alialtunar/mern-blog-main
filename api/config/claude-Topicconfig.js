@@ -1,10 +1,10 @@
-export const jobConfig = {
+export const TopicConfig = {
     claudeJob: {
-        schedule: '*/10 * * * *',
+        schedule: '0 * * * *',
         enabled: true,
         maxRetries: 3,
         timeout: 30000
     }
  };
  
- export default jobConfig;
+ export default TopicConfig;

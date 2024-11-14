@@ -3,7 +3,7 @@ import ClaudeTopicJob from './claudeTopicJob.js'
 
 export const startAll = () => {
           claudeJob.start();
-       ClaudeTopicJob.start();
+      ClaudeTopicJob.start();
 
 };
 

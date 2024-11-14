@@ -195,7 +195,7 @@ class ClaudeJob {
             slug,
             metaTitle:latestTopic.metaTitle,
             metaDescription:latestTopic.metaDescription,
-            userId: "666ae50bef8a61688de9daac",
+            userId: "6736497e2ae272d207c6d118",
         });
         
         await newPost.save();
